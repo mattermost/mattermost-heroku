@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+ENV_DIR=$3
+DOWNLOAD_URI=$(cat ${ENV_DIR}/MATTERMOST_DOWNLOAD_URI)
+
+echo "-----> Retrieving mattermost tar from ${DOWNLOAD_URI}"
+curl -s -L "${DOWNLOAD_URI}" | tar -zxf - --strip-components=1 -C ${BUILD_DIR}
+mkdir data/

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cat << EOF
+---
+addons:
+  - heroku-postgresql:hobby-dev
+EOF
