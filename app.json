@@ -34,4 +34,5 @@
         "description": "The AWS region you selected when creating your S3 bucket. Refer to AWS Reference Documentation (http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region) and choose this variable from the Region column.",
         "value": "us-east-1"
     }
+  }
 }
