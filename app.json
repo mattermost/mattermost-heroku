@@ -1,9 +1,10 @@
 {
   "name": "Mattermost",
-  "description": "Mattermost running on Heroku",
+  "description": "Preview instance of Mattermost running on Heroku.",
   "repository": "https://github.com/mattermost/platform",
   "keywords": ["mattermost"],
   "success_url": "/",
+  "logo": "https://www.mattermost.org/wp-content/uploads/2016/04/icon_WS.png",
   "env": {
     "BUILDPACK_URL": "http://github.com/kr/heroku-buildpack-inline.git",
     "MATTERMOST_DOWNLOAD_URI": {
