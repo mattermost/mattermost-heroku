@@ -105,7 +105,7 @@
         "SMTPPassword": "${EMAIL_SETTINGS__SMTP_PASSWORD}",
         "SMTPServer": "${EMAIL_SETTINGS__SMTP_SERVER}",
         "SMTPPort": "${EMAIL_SETTINGS__SMTP_PORT}",
-        "ConnectionSecurity": "",
+        "ConnectionSecurity": "${EMAIL_SETTINGS__CONNECTION_SECURITY}",
         "InviteSalt": "bjlSR4QqkXFBr7TP4oDzlfZmcNuH9YoS",
         "PasswordResetSalt": "vZ4DcKyVVRlKHHJpexcuXzojkE5PZ5eL",
         "SendPushNotifications": ${EMAIL_SETTINGS__SEND_PUSH_NOTIFICATIONS},
