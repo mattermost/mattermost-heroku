@@ -1,6 +1,6 @@
 {
     "ServiceSettings": {
-        "SiteURL": "",
+        "SiteURL": "${SERVICE_SETTINGS__SITEURL}",
         "WebsocketURL": "",
         "LicenseFileLocation": "",
         "ListenAddress": "0.0.0.0:${PORT}",
