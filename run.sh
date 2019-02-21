@@ -23,4 +23,4 @@ export EMAIL_SETTINGS__PUSH_NOTIFICATION_CONTENTS=${EMAIL_SETTINGS__PUSH_NOTIFIC
 
 lib/envsubst < config/config-heroku-template.json > config/config-heroku.json
 
-bin/platform -config=config/config-heroku.json
+bin/mattermost -config=config/config-heroku.json
