@@ -183,7 +183,7 @@
         "FeedbackEmail": "${EMAIL_SETTINGS__FEEDBACK_EMAIL}",
         "ReplyToAddress": "${EMAIL_SETTINGS__FEEDBACK_EMAIL}",
         "FeedbackOrganization": "${EMAIL_SETTINGS__FEEDBACK_ORGANIZATION}",
-        "EnableSMTPAuth": false,
+        "EnableSMTPAuth": ${EMAIL_SETTINGS__SMTP_AUTH_ENABLED},
         "SMTPUsername": "${EMAIL_SETTINGS__SMTP_USERNAME}",
         "SMTPPassword": "${EMAIL_SETTINGS__SMTP_PASSWORD}",
         "SMTPServer": "${EMAIL_SETTINGS__SMTP_SERVER}",
