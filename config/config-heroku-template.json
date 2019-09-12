@@ -72,7 +72,7 @@
     },
     "FileSettings": {
         "MaxFileSize": 52428800,
-        "DriverName": "local",
+        "DriverName": "${FILE_SETTINGS__DRIVER_NAME}",
         "Directory": "./data/",
         "EnablePublicLink": false,
         "PublicLinkSalt": "A705AklYF8MFDOfcwh3I488G8vtLlVip",
