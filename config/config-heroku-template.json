@@ -411,8 +411,21 @@
         "EnableUploads": false,
         "Directory": "./plugins",
         "ClientDirectory": "./client/plugins",
-        "Plugins": {},
-        "PluginStates": {}
+        "Plugins": {
+            "com.github.moussetc.mattermost.plugin.giphy": {
+                "provider": ${PLUGIN_GIPHY__PROVIDER},
+                "apikey": ${PLUGIN_GIPHY__APIKEY}, 
+                "language": ${PLUGIN_GIPHY__LANGUAGE},
+                "rating": ${PLUGIN_GIPHY__RATING},
+                "rendition": ${PLUGIN_GIPHY__RENDITION},
+                "renditionGfycat": ${PLUGIN_GIPHY__RENDITIONGFYCAT}
+            },
+        },
+        "PluginStates": {
+            "com.github.moussetc.mattermost.plugin.giphy": {
+                "Enable": ${PLUGIN_GIPHY__ENABLE}
+            },
+        }
     },
     "ImageProxySettings": {
         "Enable": true,

@@ -30,6 +30,18 @@ export SESSION_LENGTH__WEB=${SESSION_LENGTH__WEB:=30}
 export SESSION_LENGTH__MOBILE=${SESSION_LENGTH__MOBILE:=30}
 export SESSION_LENGTH__SSO=${SESSION_LENGTH__SSO:=30}
 
+
+export PLUGIN_GIPHY__ENABLE=${PLUGIN_GIPHY__ENABLE:=false}
+
+export PLUGIN_GIPHY__PROVIDER=${PLUGIN_GIPHY__PROVIDER:="giphy"}
+export PLUGIN_GIPHY__APIKEY=${PLUGIN_GIPHY__APIKEY:=""}
+export PLUGIN_GIPHY__LANGUAGE=${PLUGIN_GIPHY__LANGUAGE:="en"}
+export PLUGIN_GIPHY__RATING=${PLUGIN_GIPHY__RATING:=""}
+export PLUGIN_GIPHY__RENDITION=${PLUGIN_GIPHY__RENDITION:="fixed_height_small"}
+export PLUGIN_GIPHY__RENDITIONGFYCAT=${PLUGIN_GIPHY__RENDITIONGFYCAT:="100pxGif"}
+
+
+
 lib/envsubst < config/config-heroku-template.json > config/config-heroku.json
 
 bin/mattermost --config=config/config-heroku.json
