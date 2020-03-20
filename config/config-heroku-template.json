@@ -419,12 +419,12 @@
                 "rating": "${PLUGIN_GIPHY__RATING}",
                 "rendition": "${PLUGIN_GIPHY__RENDITION}",
                 "renditionGfycat": "${PLUGIN_GIPHY__RENDITIONGFYCAT}"
-            },
+            }
         },
         "PluginStates": {
             "com.github.moussetc.mattermost.plugin.giphy": {
                 "Enable": ${PLUGIN_GIPHY__ENABLE}
-            },
+            }
         }
     },
     "ImageProxySettings": {
