@@ -27,7 +27,7 @@
         "EnablePostUsernameOverride": false,
         "EnablePostIconOverride": false,
         "EnableAPIv3": false,
-        "EnableLinkPreviews": false,
+        "EnableLinkPreviews": ${LINK_PREVIEW__ENABLE},
         "EnableTesting": false,
         "EnableDeveloper": false,
         "EnableSecurityFixAlert": true,
