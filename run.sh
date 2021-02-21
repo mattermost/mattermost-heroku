@@ -32,6 +32,13 @@ export SESSION_LENGTH__WEB=${SESSION_LENGTH__WEB:=30}
 export SESSION_LENGTH__MOBILE=${SESSION_LENGTH__MOBILE:=30}
 export SESSION_LENGTH__SSO=${SESSION_LENGTH__SSO:=30}
 
+export GOOGLE_SETTINGS__ENABLE=${GOOGLE_SETTINGS__ENABLE:=false}
+export GOOGLE_SETTINGS__SECRET=${GOOGLE_SETTINGS__SECRET:=""}
+export GOOGLE_SETTINGS__ID=${GOOGLE_SETTINGS__ID:=""}
+export GOOGLE_SETTINGS__SCOPE=${GOOGLE_SETTINGS__SCOPE:="profile email"}
+export GOOGLE_SETTINGS__AUTH_ENDPOINT=${GOOGLE_SETTINGS__AUTH_ENDPOINT:="https://accounts.google.com/o/oauth2/v2/auth"}
+export GOOGLE_SETTINGS__TOKEN_ENDPOINT=${GOOGLE_SETTINGS__TOKEN_ENDPOINT:="https://www.googleapis.com/oauth2/v4/token"}
+export GOOGLE_SETTINGS__USER_ENDPOINT=${GOOGLE_SETTINGS__USER_ENDPOINT:="https://people.googleapis.com/v1/people/me?personFields=names,emailAddresses,nicknames,metadata"}
 
 export PICKER_GFYCAT__ENABLE=${PICKER_GFYCAT__ENABLE:=false}
 
@@ -46,7 +53,6 @@ export PLUGIN_GIPHY__LANGUAGE=${PLUGIN_GIPHY__LANGUAGE:="en"}
 export PLUGIN_GIPHY__RATING=${PLUGIN_GIPHY__RATING:=""}
 export PLUGIN_GIPHY__RENDITION=${PLUGIN_GIPHY__RENDITION:="fixed_height_small"}
 export PLUGIN_GIPHY__RENDITIONGFYCAT=${PLUGIN_GIPHY__RENDITIONGFYCAT:="100pxGif"}
-
 
 
 lib/envsubst < config/config-heroku-template.json > config/config-heroku.json

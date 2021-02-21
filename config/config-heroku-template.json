@@ -108,7 +108,7 @@
         "ExperimentalHideTownSquareinLHS": false,
         "ExperimentalTownSquareIsReadOnly": false,
         "ExperimentalPrimaryTeam": "",
-        "ExperimentalDefaultChannels": ""
+        "ExperimentalDefaultChannels": []
     },
     "DisplaySettings": {
         "CustomUrlSchemes": [],
@@ -250,13 +250,13 @@
         "UserApiEndpoint": ""
     },
     "GoogleSettings": {
-        "Enable": false,
-        "Secret": "",
-        "Id": "",
-        "Scope": "profile email",
-        "AuthEndpoint": "https://accounts.google.com/o/oauth2/v2/auth",
-        "TokenEndpoint": "https://www.googleapis.com/oauth2/v4/token",
-        "UserApiEndpoint": "https://www.googleapis.com/plus/v1/people/me"
+        "Enable": ${GOOGLE_SETTINGS__ENABLE},
+        "Secret": "${GOOGLE_SETTINGS__SECRET}",
+        "Id": "${GOOGLE_SETTINGS__ID}",
+        "Scope": "${GOOGLE_SETTINGS__SCOPE}",
+        "AuthEndpoint": "${GOOGLE_SETTINGS__AUTH_ENDPOINT}",
+        "TokenEndpoint": "${GOOGLE_SETTINGS__TOKEN_ENDPOINT}",
+        "UserApiEndpoint": "${GOOGLE_SETTINGS__USER_ENDPOINT}"
     },
     "Office365Settings": {
         "Enable": false,
