@@ -17,7 +17,7 @@ app="my-app" # set to your apps' name
 
 dokku apps:create $app
 # check app.json for a sane default
-dokku config:set $app MATTERMOST_DOWNLOAD_URI=https://releases.mattermost.com/5.32.1/mattermost-5.32.1-linux-amd64.tar.gz
+dokku config:set $app MATTERMOST_DOWNLOAD_URI=https://releases.mattermost.com/7.3.0/mattermost-7.3.0-linux-amd64.tar.gz
 # set the variable to disable dropping privileges, see https://github.com/gliderlabs/herokuish/blob/master/README.md#using-herokuish
 dokku config:set $app HEROKUISH_SETUIDGUID=false
 ```
