@@ -10,7 +10,7 @@
     "MATTERMOST_DOWNLOAD_URI": {
         "description": "The URI to the compiled Mattermost binary you would like to run. Defaults to latest release. See https://www.mattermost.org/download/ for download links.",
         "required": true,
-        "value": "https://releases.mattermost.com/5.32.1/mattermost-5.32.1-linux-amd64.tar.gz"
+        "value": "https://releases.mattermost.com/7.3.0/mattermost-7.3.0-linux-amd64.tar.gz"
     },
     "FILE_SETTINGS__DRIVER_NAME": {
         "description": "The type of file storage to use. Must be local or amazons3. WARNING: If local, files will be periodically wiped when the dyno restarts. Only use local for temporary preview instances.",
